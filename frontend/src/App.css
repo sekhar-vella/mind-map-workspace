@@ -1,0 +1,152 @@
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  color: #e6e8ee;
+
+  /* Classy ink-black background */
+  background:
+    radial-gradient(1200px 600px at 50% -20%, rgba(255,255,255,0.04), transparent 40%),
+    radial-gradient(800px 400px at 80% 20%, rgba(255,255,255,0.03), transparent 40%),
+    linear-gradient(180deg, #05060a, #070914);
+}
+
+/* ===== HEADER ===== */
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #9ae6b4;
+
+  background: rgba(10, 12, 24, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 230px;
+  padding: 18px;
+  background: rgba(10, 12, 24, 0.65);
+  backdrop-filter: blur(14px);
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+.sidebar h3 {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #7dd3fc;
+  margin-bottom: 14px;
+}
+
+.sidebar p {
+  font-size: 13px;
+  margin: 6px 0;
+  color: #c7d2fe;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  flex: 1;
+  padding: 26px;
+  overflow-y: auto;
+}
+
+/* ===== GLASS SECTIONS ===== */
+.section {
+  margin-bottom: 28px;
+  padding: 18px 20px;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(15,18,40,0.75),
+    rgba(8,10,24,0.75)
+  );
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.06);
+
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.section:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.65);
+}
+
+.section h2 {
+  margin: 0 0 14px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* ===== TREE ===== */
+.tree-box {
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+/* ===== PERFORMANCE ===== */
+.perf-box {
+  height: 360px;
+  overflow-y: auto;
+  border: 1px solid rgba(154,230,180,0.6);
+}
+
+/* ===== TREE ITEMS ===== */
+.tree-item {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  line-height: 1.4;
+}
+
+.tree-item:hover {
+  background: rgba(255,255,255,0.035);
+}
+
+/* ===== ICONS ===== */
+.folder {
+  color: #facc15;
+  margin-right: 6px;
+}
+
+/* ===== INPUT ===== */
+input[type="datetime-local"] {
+  background: rgba(8,10,24,0.9);
+  color: #e6e8ee;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-family: inherit;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
